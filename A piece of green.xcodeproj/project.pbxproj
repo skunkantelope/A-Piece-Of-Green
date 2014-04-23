@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		554147D7190720C90097C571 /* BounceSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 554147D6190720C90097C571 /* BounceSegue.m */; };
 		556267F11906ED43000F6C3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556267F01906ED43000F6C3F /* Foundation.framework */; };
 		556267F31906ED43000F6C3F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556267F21906ED43000F6C3F /* CoreGraphics.framework */; };
 		556267F51906ED43000F6C3F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556267F41906ED43000F6C3F /* UIKit.framework */; };
@@ -22,6 +23,12 @@
 		556268121906ED43000F6C3F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556267F61906ED43000F6C3F /* CoreData.framework */; };
 		5562681A1906ED43000F6C3F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 556268181906ED43000F6C3F /* InfoPlist.strings */; };
 		5562681C1906ED43000F6C3F /* A_piece_of_greenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5562681B1906ED43000F6C3F /* A_piece_of_greenTests.m */; };
+		556268261906ED6C000F6C3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 556268251906ED6C000F6C3F /* Main.storyboard */; };
+		556268291906FE2F000F6C3F /* GreenReporterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 556268281906FE2F000F6C3F /* GreenReporterViewController.m */; };
+		5562682C1906FE46000F6C3F /* GreenSolverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5562682B1906FE46000F6C3F /* GreenSolverViewController.m */; };
+		5562682F1906FE61000F6C3F /* GreenSponsorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5562682E1906FE61000F6C3F /* GreenSponsorViewController.m */; };
+		556268321906FEA1000F6C3F /* GreenHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 556268311906FEA1000F6C3F /* GreenHomeViewController.m */; };
+		556268351906FFAB000F6C3F /* GreenContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 556268341906FFAB000F6C3F /* GreenContentViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		554147D5190720C90097C571 /* BounceSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BounceSegue.h; sourceTree = "<group>"; };
+		554147D6190720C90097C571 /* BounceSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BounceSegue.m; sourceTree = "<group>"; };
 		556267ED1906ED43000F6C3F /* A piece of green.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "A piece of green.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		556267F01906ED43000F6C3F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		556267F21906ED43000F6C3F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +62,17 @@
 		556268171906ED43000F6C3F /* A piece of greenTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "A piece of greenTests-Info.plist"; sourceTree = "<group>"; };
 		556268191906ED43000F6C3F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5562681B1906ED43000F6C3F /* A_piece_of_greenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = A_piece_of_greenTests.m; sourceTree = "<group>"; };
+		556268251906ED6C000F6C3F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
+		556268271906FE2F000F6C3F /* GreenReporterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreenReporterViewController.h; sourceTree = "<group>"; };
+		556268281906FE2F000F6C3F /* GreenReporterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GreenReporterViewController.m; sourceTree = "<group>"; };
+		5562682A1906FE46000F6C3F /* GreenSolverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreenSolverViewController.h; sourceTree = "<group>"; };
+		5562682B1906FE46000F6C3F /* GreenSolverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GreenSolverViewController.m; sourceTree = "<group>"; };
+		5562682D1906FE61000F6C3F /* GreenSponsorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreenSponsorViewController.h; sourceTree = "<group>"; };
+		5562682E1906FE61000F6C3F /* GreenSponsorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GreenSponsorViewController.m; sourceTree = "<group>"; };
+		556268301906FEA1000F6C3F /* GreenHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreenHomeViewController.h; sourceTree = "<group>"; };
+		556268311906FEA1000F6C3F /* GreenHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GreenHomeViewController.m; sourceTree = "<group>"; };
+		556268331906FFAB000F6C3F /* GreenContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreenContentViewController.h; sourceTree = "<group>"; };
+		556268341906FFAB000F6C3F /* GreenContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GreenContentViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +101,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		554147D41907208E0097C571 /* Segue */ = {
+			isa = PBXGroup;
+			children = (
+				554147D5190720C90097C571 /* BounceSegue.h */,
+				554147D6190720C90097C571 /* BounceSegue.m */,
+			);
+			name = Segue;
+			sourceTree = "<group>";
+		};
 		556267E41906ED43000F6C3F = {
 			isa = PBXGroup;
 			children = (
@@ -115,11 +144,23 @@
 		556267F81906ED43000F6C3F /* A piece of green */ = {
 			isa = PBXGroup;
 			children = (
+				554147D41907208E0097C571 /* Segue */,
+				556268251906ED6C000F6C3F /* Main.storyboard */,
 				556268011906ED43000F6C3F /* GreenAppDelegate.h */,
 				556268021906ED43000F6C3F /* GreenAppDelegate.m */,
 				556268071906ED43000F6C3F /* Images.xcassets */,
 				556268041906ED43000F6C3F /* A_piece_of_green.xcdatamodeld */,
 				556267F91906ED43000F6C3F /* Supporting Files */,
+				556268271906FE2F000F6C3F /* GreenReporterViewController.h */,
+				556268281906FE2F000F6C3F /* GreenReporterViewController.m */,
+				5562682A1906FE46000F6C3F /* GreenSolverViewController.h */,
+				5562682B1906FE46000F6C3F /* GreenSolverViewController.m */,
+				5562682D1906FE61000F6C3F /* GreenSponsorViewController.h */,
+				5562682E1906FE61000F6C3F /* GreenSponsorViewController.m */,
+				556268301906FEA1000F6C3F /* GreenHomeViewController.h */,
+				556268311906FEA1000F6C3F /* GreenHomeViewController.m */,
+				556268331906FFAB000F6C3F /* GreenContentViewController.h */,
+				556268341906FFAB000F6C3F /* GreenContentViewController.m */,
 			);
 			path = "A piece of green";
 			sourceTree = "<group>";
@@ -229,6 +270,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				556268261906ED6C000F6C3F /* Main.storyboard in Resources */,
 				556267FD1906ED43000F6C3F /* InfoPlist.strings in Resources */,
 				556268081906ED43000F6C3F /* Images.xcassets in Resources */,
 			);
@@ -249,9 +291,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				556268321906FEA1000F6C3F /* GreenHomeViewController.m in Sources */,
+				554147D7190720C90097C571 /* BounceSegue.m in Sources */,
 				556268061906ED43000F6C3F /* A_piece_of_green.xcdatamodeld in Sources */,
+				556268351906FFAB000F6C3F /* GreenContentViewController.m in Sources */,
 				556268031906ED43000F6C3F /* GreenAppDelegate.m in Sources */,
 				556267FF1906ED43000F6C3F /* main.m in Sources */,
+				5562682F1906FE61000F6C3F /* GreenSponsorViewController.m in Sources */,
+				556268291906FE2F000F6C3F /* GreenReporterViewController.m in Sources */,
+				5562682C1906FE46000F6C3F /* GreenSolverViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +496,7 @@
 				556268211906ED43000F6C3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		556268221906ED43000F6C3F /* Build configuration list for PBXNativeTarget "A piece of greenTests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +505,7 @@
 				556268241906ED43000F6C3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

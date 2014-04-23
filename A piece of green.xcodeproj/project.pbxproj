@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		554147D7190720C90097C571 /* BounceSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 554147D6190720C90097C571 /* BounceSegue.m */; };
+		554147DD19073B9C0097C571 /* GreenProblemsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 554147DC19073B9C0097C571 /* GreenProblemsTableViewController.m */; };
+		554147E01907467C0097C571 /* GreenNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 554147DF1907467C0097C571 /* GreenNewsViewController.m */; };
+		554147E31907491E0097C571 /* DragToLeft.m in Sources */ = {isa = PBXBuildFile; fileRef = 554147E21907491E0097C571 /* DragToLeft.m */; };
+		554147E6190774930097C571 /* GreenContactInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 554147E5190774930097C571 /* GreenContactInfoViewController.m */; };
+		554147E9190782F70097C571 /* GreenProblemDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 554147E8190782F70097C571 /* GreenProblemDetailViewController.m */; };
 		556267F11906ED43000F6C3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556267F01906ED43000F6C3F /* Foundation.framework */; };
 		556267F31906ED43000F6C3F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556267F21906ED43000F6C3F /* CoreGraphics.framework */; };
 		556267F51906ED43000F6C3F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556267F41906ED43000F6C3F /* UIKit.framework */; };
@@ -44,6 +49,16 @@
 /* Begin PBXFileReference section */
 		554147D5190720C90097C571 /* BounceSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BounceSegue.h; sourceTree = "<group>"; };
 		554147D6190720C90097C571 /* BounceSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BounceSegue.m; sourceTree = "<group>"; };
+		554147DB19073B9C0097C571 /* GreenProblemsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreenProblemsTableViewController.h; sourceTree = "<group>"; };
+		554147DC19073B9C0097C571 /* GreenProblemsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GreenProblemsTableViewController.m; sourceTree = "<group>"; };
+		554147DE1907467C0097C571 /* GreenNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreenNewsViewController.h; sourceTree = "<group>"; };
+		554147DF1907467C0097C571 /* GreenNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GreenNewsViewController.m; sourceTree = "<group>"; };
+		554147E11907491E0097C571 /* DragToLeft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragToLeft.h; sourceTree = "<group>"; };
+		554147E21907491E0097C571 /* DragToLeft.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragToLeft.m; sourceTree = "<group>"; };
+		554147E4190774930097C571 /* GreenContactInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreenContactInfoViewController.h; sourceTree = "<group>"; };
+		554147E5190774930097C571 /* GreenContactInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GreenContactInfoViewController.m; sourceTree = "<group>"; };
+		554147E7190782F70097C571 /* GreenProblemDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreenProblemDetailViewController.h; sourceTree = "<group>"; };
+		554147E8190782F70097C571 /* GreenProblemDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GreenProblemDetailViewController.m; sourceTree = "<group>"; };
 		556267ED1906ED43000F6C3F /* A piece of green.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "A piece of green.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		556267F01906ED43000F6C3F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		556267F21906ED43000F6C3F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -106,6 +121,8 @@
 			children = (
 				554147D5190720C90097C571 /* BounceSegue.h */,
 				554147D6190720C90097C571 /* BounceSegue.m */,
+				554147E11907491E0097C571 /* DragToLeft.h */,
+				554147E21907491E0097C571 /* DragToLeft.m */,
 			);
 			name = Segue;
 			sourceTree = "<group>";
@@ -161,6 +178,14 @@
 				556268311906FEA1000F6C3F /* GreenHomeViewController.m */,
 				556268331906FFAB000F6C3F /* GreenContentViewController.h */,
 				556268341906FFAB000F6C3F /* GreenContentViewController.m */,
+				554147DB19073B9C0097C571 /* GreenProblemsTableViewController.h */,
+				554147DC19073B9C0097C571 /* GreenProblemsTableViewController.m */,
+				554147DE1907467C0097C571 /* GreenNewsViewController.h */,
+				554147DF1907467C0097C571 /* GreenNewsViewController.m */,
+				554147E4190774930097C571 /* GreenContactInfoViewController.h */,
+				554147E5190774930097C571 /* GreenContactInfoViewController.m */,
+				554147E7190782F70097C571 /* GreenProblemDetailViewController.h */,
+				554147E8190782F70097C571 /* GreenProblemDetailViewController.m */,
 			);
 			path = "A piece of green";
 			sourceTree = "<group>";
@@ -294,12 +319,17 @@
 				556268321906FEA1000F6C3F /* GreenHomeViewController.m in Sources */,
 				554147D7190720C90097C571 /* BounceSegue.m in Sources */,
 				556268061906ED43000F6C3F /* A_piece_of_green.xcdatamodeld in Sources */,
+				554147E01907467C0097C571 /* GreenNewsViewController.m in Sources */,
 				556268351906FFAB000F6C3F /* GreenContentViewController.m in Sources */,
 				556268031906ED43000F6C3F /* GreenAppDelegate.m in Sources */,
+				554147E6190774930097C571 /* GreenContactInfoViewController.m in Sources */,
 				556267FF1906ED43000F6C3F /* main.m in Sources */,
+				554147E31907491E0097C571 /* DragToLeft.m in Sources */,
 				5562682F1906FE61000F6C3F /* GreenSponsorViewController.m in Sources */,
 				556268291906FE2F000F6C3F /* GreenReporterViewController.m in Sources */,
 				5562682C1906FE46000F6C3F /* GreenSolverViewController.m in Sources */,
+				554147DD19073B9C0097C571 /* GreenProblemsTableViewController.m in Sources */,
+				554147E9190782F70097C571 /* GreenProblemDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

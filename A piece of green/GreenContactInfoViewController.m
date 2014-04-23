@@ -1,18 +1,19 @@
 //
-//  GreenReporterViewController.m
+//  GreenContactInfoViewController.m
 //  A piece of green
 //
 //  Created by Qian Wang on 4/22/14.
 //  Copyright (c) 2014 Kelly Kahuna Imagery. All rights reserved.
 //
 
-#import "GreenReporterViewController.h"
+#import "GreenContactInfoViewController.h"
+#import "GreenContentViewController.h"
 
-@interface GreenReporterViewController ()
+@interface GreenContactInfoViewController ()
 
 @end
 
-@implementation GreenReporterViewController
+@implementation GreenContactInfoViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -48,23 +49,39 @@
 {
     
     // Return the number of rows in the section.
-    return 3;
+    return 4;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell;
-    if (indexPath.row == 0) {
-        cell = [tableView dequeueReusableCellWithIdentifier:@"Category" forIndexPath:indexPath];
-    }
-    if (indexPath.row == 1) {
-        cell = [tableView dequeueReusableCellWithIdentifier:@"Description" forIndexPath:indexPath];
-    }
-    cell = [tableView dequeueReusableCellWithIdentifier:@"Location" forIndexPath:indexPath];
     
+    switch (indexPath.row) {
+        case 0:
+            cell = [tableView dequeueReusableCellWithIdentifier:@"FirstCell" forIndexPath:indexPath];
+            break;
+        case 1:
+            cell = [tableView dequeueReusableCellWithIdentifier:@"LastCell" forIndexPath:indexPath];
+            break;
+        case 2:
+            cell = [tableView dequeueReusableCellWithIdentifier:@"PhoneCell" forIndexPath:indexPath];
+        default:
+            cell = [tableView dequeueReusableCellWithIdentifier:@"EmailCell" forIndexPath:indexPath];
+            break;
+    }
+
     return cell;
 }
-/*
+
+- (UIImage *)snapShot {
+    UIGraphicsBeginImageContext(self.view.frame.size);
+    [self.view.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return image;
+}
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -72,7 +89,10 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"ToContact"]) {
+        GreenContentViewController *viewController = [segue destinationViewController];
+        viewController.previousScreen = [self snapShot];
+    }
 }
-*/
 
 @end

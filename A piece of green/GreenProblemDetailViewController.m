@@ -1,18 +1,21 @@
 //
-//  GreenSolverViewController.m
+//  GreenProblemDetailViewController.m
 //  A piece of green
 //
 //  Created by Qian Wang on 4/22/14.
 //  Copyright (c) 2014 Kelly Kahuna Imagery. All rights reserved.
 //
 
-#import "GreenSolverViewController.h"
+#import "GreenProblemDetailViewController.h"
 
-@interface GreenSolverViewController ()
+@interface GreenProblemDetailViewController ()
+- (IBAction)bringUpPage:(id)sender;
+@property (weak, nonatomic) IBOutlet UIView *page1;
+@property (weak, nonatomic) IBOutlet UIView *page2;
 
 @end
 
-@implementation GreenSolverViewController
+@implementation GreenProblemDetailViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -35,33 +38,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    
-    // Return the number of sections.
-    return 1;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    
-    // Return the number of rows in the section.
-    return 2;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    UITableViewCell *cell;
-    if (indexPath.row == 0) {
-        cell = [tableView dequeueReusableCellWithIdentifier:@"Before" forIndexPath:indexPath];
-    }
-    
-    cell = [tableView dequeueReusableCellWithIdentifier:@"After" forIndexPath:indexPath];
-
-    return cell;
-}
 /*
 #pragma mark - Navigation
 
@@ -73,4 +49,16 @@
 }
 */
 
+- (IBAction)bringUpPage:(id)sender {
+  /*  if ( ((UIPageControl *)sender).currentPage == 1) {
+        self.page1.hidden = YES;
+        self.page2.hidden = NO;
+    } else {
+        self.page1.hidden = NO;
+        self.page2.hidden = YES;
+    }
+   */
+    self.page1.hidden = !self.page1.hidden;
+    self.page2.hidden = !self.page2.hidden;
+}
 @end

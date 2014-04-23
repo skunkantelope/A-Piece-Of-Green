@@ -1,5 +1,5 @@
 //
-//  GreenSolverViewController.h
+//  GreenProblemDetailViewController.h
 //  A piece of green
 //
 //  Created by Qian Wang on 4/22/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GreenSolverViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface GreenProblemDetailViewController : UIViewController
 
 @end

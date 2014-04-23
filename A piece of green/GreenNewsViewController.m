@@ -1,18 +1,19 @@
 //
-//  GreenReporterViewController.m
+//  GreenNewsViewController.m
 //  A piece of green
 //
 //  Created by Qian Wang on 4/22/14.
 //  Copyright (c) 2014 Kelly Kahuna Imagery. All rights reserved.
 //
 
-#import "GreenReporterViewController.h"
+#import "GreenNewsViewController.h"
+#import "GreenContentViewController.h"
 
-@interface GreenReporterViewController ()
+@interface GreenNewsViewController ()
 
 @end
 
-@implementation GreenReporterViewController
+@implementation GreenNewsViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -35,6 +36,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (UIImage *)snapShot {
+    UIGraphicsBeginImageContext(self.view.frame.size);
+    [self.view.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return image;
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -48,23 +58,19 @@
 {
     
     // Return the number of rows in the section.
-    return 3;
+    return 9;
 }
+
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell;
-    if (indexPath.row == 0) {
-        cell = [tableView dequeueReusableCellWithIdentifier:@"Category" forIndexPath:indexPath];
-    }
-    if (indexPath.row == 1) {
-        cell = [tableView dequeueReusableCellWithIdentifier:@"Description" forIndexPath:indexPath];
-    }
-    cell = [tableView dequeueReusableCellWithIdentifier:@"Location" forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"NewsCell" forIndexPath:indexPath];
     
+    // Configure the cell...
+    cell.textLabel.text = @"Hello, smartolope!";
     return cell;
 }
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -72,7 +78,11 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"ToNews"]) {
+        GreenContentViewController *viewController = [segue destinationViewController];
+        viewController.previousScreen = [self snapShot];
+    }
 }
-*/
+
 
 @end

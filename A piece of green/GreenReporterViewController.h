@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GreenReporterViewController : UIViewController
+@interface GreenReporterViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @end

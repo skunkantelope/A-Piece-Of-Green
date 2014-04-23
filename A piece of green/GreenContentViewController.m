@@ -35,6 +35,7 @@
 - (void)viewDidAppear:(BOOL)animated {
  
     self.previousView.image = self.previousScreen;
+    [self.view layoutSubviews];
     [super viewDidAppear:NO];
 }
 
@@ -44,7 +45,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -53,6 +54,29 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-*/
+
+- (UIStoryboardSegue *)segueForUnwindingToViewController:(UIViewController *)toViewController fromViewController:(UIViewController *)fromViewController identifier:
+    (NSString *)identifier {
+    
+    float dx = fromViewController.view.frame.size.width;
+    float dy = fromViewController.view.frame.size.height *2 / 3;
+    
+    UIStoryboardSegue *segue = [UIStoryboardSegue segueWithIdentifier:identifier source:fromViewController destination:toViewController performHandler:^{
+        // reverse the animation of BounceSegue
+        [UIView animateWithDuration:0.6 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+            fromViewController.view.transform = CGAffineTransformMakeScale(0.6, 0.6);
+            fromViewController.view.center = CGPointMake(dx, dy);
+        } completion:^(BOOL finished) {
+            
+            [toViewController dismissViewControllerAnimated:NO completion:NULL];
+        }];
+    }];
+    
+    return segue;
+}
+
+- (IBAction)unwindFromViewController:(UIStoryboardSegue *)sender {
+    
+}
 
 @end
